@@ -1,7 +1,7 @@
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Testingporman/main/Testing'))()
 local Window = Rayfield:CreateWindow({
    Name = "Criminalx|TESTING",
-   LoadingTitle = "Porman",
+   LoadingTitle = "https://discord.gg/criminalx",
    LoadingSubtitle = "by Porman",
    ConfigurationSaving = {
       Enabled = true,
