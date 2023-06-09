@@ -42,7 +42,7 @@ local Button = Tab:CreateButton({
 
 local Input = Tab:CreateInput({
    Name = "Test",
-   PlaceholderText = "Input Placeholder",
+   PlaceholderText = "Test",
    RemoveTextAfterFocusLost = false,
    Callback = function(Text)
    -- The function that takes place when the input is changed
