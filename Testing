@@ -36,7 +36,16 @@ local Section = Tab:CreateSection("Join Our discord")
 local Button = Tab:CreateButton({
    Name = "Discord",
    Callback = function()
-setclipboard("https://discord.gg/criminalx")
    -- The function that takes place when the button is pressed
+   end,
+})
+
+local Input = Tab:CreateInput({
+   Name = "Test",
+   PlaceholderText = "Input Placeholder",
+   RemoveTextAfterFocusLost = false,
+   Callback = function(Text)
+   -- The function that takes place when the input is changed
+   -- The variable (Text) is a string for the value in the text box
    end,
 })
