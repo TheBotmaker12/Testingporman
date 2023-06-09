@@ -1,8 +1,8 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Testingporman/main/Testing'))()
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Criminalx|TESTING",
-   LoadingTitle = "https://discord.gg/criminalx",
-   LoadingSubtitle = "by Porman",
+   Name = "Rayfield Example Window",
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -15,37 +15,28 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "CriminalX|KeySystem",
+      Title = "Testing",
       Subtitle = "Key System",
-      Note = "KeySystem made by @Porman join the discord https://discord.gg/criminalx",
-      FileName = "input key here", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = {"CriminalX"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+      Key = {"Crimianlx2023Key"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
 
-local Tab = Window:CreateTab("Admin")
-local Section = Tab:CreateSection("Lol")
+local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
 
-Section:Set("Welcome")
-
-local Tab = Window:CreateTab("Discord")
-local Section = Tab:CreateSection("Join Our discord")
-
-local Button = Tab:CreateButton({
-   Name = "Discord",
-   Callback = function()
-   -- The function that takes place when the button is pressed
-   end,
-})
+local Section = Tab:CreateSection("Section Example")
 
 local Input = Tab:CreateInput({
-   Name = "Test",
-   PlaceholderText = "Test",
+   Name = "Input Example",
+   PlaceholderText = "Testing",
    RemoveTextAfterFocusLost = false,
    Callback = function(Text)
    -- The function that takes place when the input is changed
    -- The variable (Text) is a string for the value in the text box
    end,
 })
+
+local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
