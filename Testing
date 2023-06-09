@@ -24,3 +24,19 @@ local Window = Rayfield:CreateWindow({
       Key = {"CriminalX"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
    }
 })
+
+local Tab = Window:CreateTab("Admin")
+local Section = Tab:CreateSection("Lol")
+
+Section:Set("Welcome")
+
+local Tab = Window:CreateTab("Discord")
+local Section = Tab:CreateSection("Join Our discord")
+
+local Button = Tab:CreateButton({
+   Name = "Discord",
+   Callback = function()
+setclipboard("https://discord.gg/criminalx")
+   -- The function that takes place when the button is pressed
+   end,
+})
