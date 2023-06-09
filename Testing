@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/TheBotmaker12/Testingporman/main/Testing'))()
 local Window = Rayfield:CreateWindow({
-   Name = "Rayfield Example Window",
-   LoadingTitle = "Rayfield Interface Suite",
-   LoadingSubtitle = "by Sirius",
+   Name = "Criminal X| testing",
+   LoadingTitle = "Criminal X| testing",
+   LoadingSubtitle = "by Porman",
    ConfigurationSaving = {
       Enabled = true,
       FolderName = nil, -- Create a custom folder for your hub/game
@@ -25,4 +25,4 @@ local Window = Rayfield:CreateWindow({
    }
 })
 
-local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Image
+local Tab = Window:CreateTab("Tab Example", 4483362458) -- Title, Imag
